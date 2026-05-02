@@ -4,9 +4,8 @@ Jednostavna web aplikacija kalkulatora izgrađena pomoću **React**, **Vite** i 
 
 ## 🔗 Live verzija
 
-👉 [https://vite-react-calculator.vercel.app](https://vite-react-calculator.vercel.app)
+👉 [https://vite-react-calculator-tau.vercel.app] (https://vite-react-calculator-tau.vercel.app)
 
-> *(Ažuriraj ovaj link nakon deploy-a na Vercel)*
 
 ## 📋 Opis projekta
 
