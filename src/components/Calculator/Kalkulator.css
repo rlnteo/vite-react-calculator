@@ -1,0 +1,138 @@
+.kalkulator-wrapper {
+  width: 360px;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.kalkulator-wrapper h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 0.5rem 0;
+  color: #111827;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.input-group label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.input-group input {
+  padding: 0.65rem 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s;
+  background-color: #f9fafb;
+}
+
+.input-group input:focus {
+  border-color: #6366f1;
+  background-color: white;
+}
+
+.operacije-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+}
+
+.op-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 0.5rem;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 10px;
+  background-color: #f9fafb;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  gap: 0.2rem;
+}
+
+.op-button:hover {
+  background-color: #ede9fe;
+  border-color: #a5b4fc;
+}
+
+.op-button.aktivan {
+  background-color: #6366f1;
+  border-color: #6366f1;
+  color: white;
+}
+
+.op-simbol {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.op-naziv {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.rezultat-box {
+  border-radius: 10px;
+  padding: 1rem 1.2rem;
+  text-align: center;
+  animation: fadeIn 0.2s ease;
+}
+
+.rezultat-box.uspeh {
+  background-color: #ecfdf5;
+  border: 1.5px solid #6ee7b7;
+}
+
+.rezultat-box.greska {
+  background-color: #fef2f2;
+  border: 1.5px solid #fca5a5;
+}
+
+.rezultat-vrednost {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #065f46;
+  margin: 0;
+}
+
+.greska-poruka {
+  font-size: 0.95rem;
+  color: #dc2626;
+  margin: 0;
+}
+
+.reset-button {
+  padding: 0.65rem;
+  font-size: 0.95rem;
+  background-color: #f3f4f6;
+  color: #374151;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+  font-weight: 500;
+}
+
+.reset-button:hover {
+  background-color: #e5e7eb;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
